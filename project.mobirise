@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "milady",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#000000",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/milady_1.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://milady-gg.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://milady-gg.github.io/sitemap.xml",
+    "mbrsiteDomain": "oc87rin7ql",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Milady Meme™ | Home Official Site",
+        "meta_descr": "A new era for Milady meme coin. With the capital infusion from DWF Labs, LADYS is poised to lead the next wave of innovation in the meme coins space.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/milady.png\" alt=\"milady\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "urxPwXqA8Z",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>The Rise of Milady: Exploring the Cultural Phenomenon of Milady NFTs</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  In the world of digital art and blockchain technology, non-fungible tokens (NFTs) have emerged as a revolutionary concept, reshaping how we perceive ownership, creativity, and value in the digital realm. Among the myriad of NFT collections that have captured the imagination of collectors and investors, <a href=\"https://milady-gg.github.io/\" class=\"text-primary\">Milady</a> stands out as a unique cultural phenomenon. This blog will explore what Milady is, its origins, its impact on the NFT space, and what it represents for the future of digital culture.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Milady?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://milady.gg/\" class=\"text-primary\">Milady</a> is an NFT collection that features a series of unique digital avatars called \"Milady NFTs.\" Each avatar is characterized by a distinct art style, often depicting whimsical, anime-inspired characters with various attributes and accessories. These NFTs are built on the Ethereum blockchain, leveraging the technology's security and transparency to establish ownership and provenance.<br><br><b>Key Objectives of Milady</b><br><b>1.Artistic Expression:</b> Milady aims to showcase the creativity of digital artists and provide a platform for self-expression through unique avatar designs.<br><b>2.Community Building:</b> The project fosters a strong sense of community among collectors and fans, encouraging interaction and collaboration.<br><b>3.Cultural Commentary:</b> Milady serves as a commentary on contemporary culture, fashion, and identity in the digital age.<br><b>4.Accessibility:</b> By utilizing blockchain technology, Milady makes art ownership accessible to a broader audience, allowing anyone to participate in the digital art market.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Origins of Milady</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. The Creative Vision</b><br>Milady was created by a group of artists and developers who sought to combine their passions for art, technology, and community. The project began as a small initiative but quickly gained traction, attracting attention from collectors and influencers in the NFT space. The striking visuals and engaging narratives behind each avatar resonated with a wide audience, contributing to the project's rapid growth.<br><br><b>2. Launch and Growth</b><br>The Milady NFT collection was launched in 2022, and its unique art style and community-driven approach quickly garnered interest. The initial drop sold out rapidly, and the subsequent secondary market saw a flurry of activity as collectors sought to acquire rare avatars. The project leveraged social media platforms, particularly Twitter and Discord, to build a vibrant community around the collection.<br><br><b>3. Cultural Impact</b><br>As Milady gained popularity, it began to transcend the realm of NFTs and became a cultural phenomenon. The avatars were embraced as symbols of digital identity and self-expression, often used in social media profiles and online communities. This cultural significance contributed to the project’s allure, turning Milady into more than just a collection of digital art.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Aesthetics and Design of Milady</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Unique Art Style</b><br>The art style of Milady is characterized by its vibrant colors, intricate details, and whimsical designs. Each avatar possesses distinct features, such as hairstyles, facial expressions, and accessories, allowing for a wide range of personalization. The artistic approach draws inspiration from anime and pop culture, appealing to a diverse audience of art enthusiasts and collectors.<br><br><b>2. Attributes and Rarity</b><br>Each Milady NFT comes with a set of attributes that contribute to its uniqueness and rarity. These attributes can include specific hairstyles, clothing, and accessories, making certain avatars more sought after than others. The rarity of an avatar often drives its market value, creating a dynamic trading environment where collectors actively seek rare pieces.<br><br><b>3. Community Contributions</b><br>The Milady project encourages community involvement in the creation of new designs and features. Artists and fans can contribute their ideas, leading to collaborative projects that further expand the Milady universe. This participatory approach fosters a sense of ownership and belonging among community members.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Milady Community</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Building a Strong Community</b><br>The Milady community is a vibrant and engaged group of collectors, artists, and enthusiasts. Through platforms like Discord and Twitter, members share their collections, discuss upcoming drops, and collaborate on creative projects. This sense of community is a cornerstone of the Milady project, providing a space for like-minded individuals to connect and collaborate.<br><br><b>2. Events and Collaborations</b><br>Milady hosts various events, including art contests, meetups, and collaborative projects. These events not only celebrate the art but also strengthen community bonds. Collaborations with other artists and NFT projects further enhance the Milady brand, expanding its reach and influence within the NFT ecosystem.<br><br><b>3. Empowering Artists</b><br>The Milady project empowers artists by providing them with a platform to showcase their work and gain recognition. Many artists within the community have leveraged their involvement in Milady to launch their own projects and expand their creative endeavors. This support for artists reinforces the project's commitment to fostering creativity and innovation.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Economic Impact of Milady</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Market Dynamics</b><br>The launch of Milady NFTs created a significant impact on the NFT marketplace, contributing to the growing demand for digital art. The collection’s success has influenced pricing trends and market dynamics, as collectors compete for rare and unique avatars. The speculative nature of the NFT market has led to fluctuations in prices, creating opportunities for both collectors and investors.<br><br><b>2. Secondary Market Activity</b><br>After the initial drop, Milady NFTs saw substantial activity in the secondary market. Collectors traded their avatars on various NFT marketplaces, leading to increased liquidity and engagement. The vibrant trading environment has attracted attention from investors looking to capitalize on the potential for appreciation in value over time.<br><br><b>3. Economic Opportunities</b><br>The rise of Milady has created economic opportunities for artists, developers, and community members. Artists can earn royalties from secondary sales, providing them with ongoing income from their creations. Additionally, the project has generated employment opportunities for developers, marketers, and community managers, contributing to the growth of the broader NFT ecosystem.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Cultural Commentary and Identity</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Digital Identity</b><br>Milady avatars have become symbols of digital identity, allowing users to express themselves in unique ways. In an increasingly digital world, these avatars serve as representations of personal style, interests, and affiliations. The ability to own and showcase a Milady NFT empowers users to curate their online presence.<br><br><b>2. Reflections on Contemporary Culture</b><br>Milady serves as a commentary on contemporary culture, fashion, and beauty standards. The avatars often reflect current trends, subcultures, and societal influences, making them relevant to a diverse audience. This cultural resonance has contributed to Milady's popularity and relevance within the NFT space.<br><br><b>3. Community and Belonging</b><br>In a digital landscape that can often feel isolating, Milady fosters a sense of belonging among its community members. By providing a platform for interaction, collaboration, and shared experiences, the project creates a supportive environment where individuals can connect and celebrate their passions.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Market Volatility</b><br>The NFT market is known for its volatility, and Milady is not immune to price fluctuations. Collectors and investors must navigate the inherent risks associated with trading NFTs, including the potential for losses. Understanding market dynamics and conducting thorough research is crucial for making informed decisions.<br><br><b>2. Copyright and Ownership Issues</b><br>As the NFT space continues to grow, questions surrounding copyright and ownership rights have become increasingly relevant. While NFT ownership provides certain rights, the underlying intellectual property remains a complex issue. Milady must navigate these challenges to ensure that creators and collectors are protected.<br><br><b>3. Sustainability Concerns</b><br>The environmental impact of blockchain technology has sparked discussions about sustainability within the NFT space. As awareness of these issues grows, projects like Milady must consider their carbon footprint and explore eco-friendly solutions to mitigate environmental harm.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Milady</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expanding the Milady Universe</b><br>The creators of Milady have ambitious plans for expanding the project’s universe. This could include new avatar designs, collaborations with other NFT projects, and the introduction of interactive features that enhance user engagement. The goal is to create a rich, immersive experience that keeps the community engaged and excited.<br><br><b>2. Enhancing Community Participation</b><br>Milady aims to strengthen community participation by implementing more collaborative initiatives. This may involve artist residencies, community-driven projects, and opportunities for members to contribute their ideas to future developments. By fostering creativity and collaboration, Milady can continue to thrive as a community-centric project.<br><br><b>3. Navigating Regulatory Challenges</b><br>As the NFT market matures, navigating regulatory challenges will be crucial for Milady’s success. The project will need to stay informed about evolving regulations surrounding digital art, ownership, and copyright to ensure compliance and protect the interests of its community.<br><br><b>4. Embracing Technological Advancements</b><br>The rapid pace of technological advancements in blockchain and digital art will shape the future of Milady. The project will need to embrace innovations such as augmented reality (AR), virtual reality (VR), and enhanced interactivity to provide users with immersive experiences that go beyond static images.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Conclusion</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Milady has emerged as a cultural phenomenon within the NFT space, capturing the imagination of artists, collectors, and enthusiasts alike. Through its unique art style, strong community engagement, and cultural commentary, Milady has created a space where creativity thrives and digital identity is celebrated.<br><br>As the NFT market continues to evolve, projects like Milady will play a pivotal role in shaping the future of digital art and culture. By fostering artistic expression, community building, and accessibility, Milady stands as a testament to the transformative power of blockchain technology.<br><br>In a world where digital ownership and creativity are increasingly intertwined, Milady invites individuals to explore new possibilities for self-expression and connection. As the project continues to grow and adapt, it promises to unlock new horizons for artists and collectors, reinforcing the belief that art can thrive in the digital age.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "urxPxc30UX",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
